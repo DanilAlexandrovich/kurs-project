@@ -7,6 +7,6 @@ import lombok.Setter;
 public class CarDto {
     private double productionCosts;
     private double distributionCosts;
-    private double otherPublishingCosts;
+    private double advertisingExpenses;
     private int quantity;
 }

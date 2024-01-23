@@ -120,6 +120,6 @@ public class SecurityController {
     }
 
     private double calculateTotalCarCost(CarDto car) {
-        return (car.getProductionCosts() + car.getDistributionCosts() + car.getOtherPublishingCosts()) / car.getQuantity();
+        return (car.getProductionCosts() + car.getDistributionCosts() + car.getAdvertisingExpenses() / car.getQuantity());
     }
 }
