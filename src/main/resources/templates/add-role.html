@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{/users}">Users</a>
+                    <a class="nav-link active" aria-current="page" th:href="@{/users}">Пользователи</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{/logout}">Logout</a>
+                    <a class="nav-link active" aria-current="page" th:href="@{/logout}">Выйти</a>
                 </li>
             </ul>
         </div>
@@ -32,7 +32,7 @@
 </nav>
 <br/><br/>
 <div class="container">
-    <h2>Add Role to User</h2>
+    <h2>Добавить роль пользователю</h2>
     <form action="/add-role" method="post">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
@@ -45,7 +45,7 @@
                 <option value="ADMIN">Admin</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary">Add Role</button>
+        <button type="submit" class="btn btn-primary">Добавить</button>
     </form>
 </div>
 </body>

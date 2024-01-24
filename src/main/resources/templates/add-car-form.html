@@ -19,10 +19,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{/list-cars}">Cars</a>
+                    <a class="nav-link active" aria-current="page" th:href="@{/list-cars}">Авто</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" th:href="@{/logout}">Logout</a>
+                    <a class="nav-link active" aria-current="page" th:href="@{/logout}">Выйти</a>
                 </li>
         </div>
     </div>
@@ -31,7 +31,7 @@
 
     <hr/>
 
-    <h3>Add New Car</h3>
+    <h3>Добавить</h3>
     <hr/>
 
     <form th:action="@{/saveCar}" th:object="${car}" method="POST">
@@ -44,13 +44,13 @@
 
         <input type="text" th:field="*{price}" class="form-control col-4 mb-4" placeholder="Enter Price"/>
 
-        <button type="submit" class="btn btn-primary col-2">Save</button>
+        <button type="submit" class="btn btn-primary col-2">Сохранить</button>
 
         <input type="hidden" th:field="*{id}"/>
 
     </form>
     <hr/>
-    <a th:href="@{/list-cars}">Back to list</a>
+    <a th:href="@{/list-cars}">Вернуться</a>
 </div>
 
 </body>
